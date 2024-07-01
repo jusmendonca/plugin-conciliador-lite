@@ -8,7 +8,7 @@ O plugin lê planilhas em formato .xlsx e retorna o valor total dos atrasados pa
 
 É necessário que a planilha .xslx escolhida corresponda ao benefício, à DIP e ao percentual de desconto do acordo que será proposto.
 
-## Intruções de instalação (Windows)
+## Instruções de instalação (Windows)
 
 1. Fazer o download da pasta **plugin-conciliador-lite-main.zip**;
 
@@ -64,6 +64,23 @@ O plugin lê planilhas em formato .xlsx e retorna o valor total dos atrasados pa
 ![image](https://github.com/jusmendonca/plugin-conciliador-lite/assets/132851772/90155799-6548-41b4-b306-932954ce3c74)
 
 7. Agora, basta colar (com Ctrl+V ou botão direito do mouse) o valor do acordo no campo próprio da minuta e salvá-la.
+
+## Atualização das planilhas
+
+Mensalmente, será gerada uma nova planilha para a DIP no primeiro dia do mês corrente. Para fazer o download da nova planilha, navegue até a pasta desejada e faça o download da planilha:
+
+<img width="342" alt="image" src="https://github.com/jusmendonca/plugin-conciliador-lite/assets/132851772/92146698-094d-413c-96cf-488c4358e93e">
+
+
+<img width="521" alt="image" src="https://github.com/jusmendonca/plugin-conciliador-lite/assets/132851772/722cd0b9-1b94-4a43-99e5-2a7686db7c20">
+
+
+<img width="367" alt="image" src="https://github.com/jusmendonca/plugin-conciliador-lite/assets/132851772/e85e3c99-769e-4aa9-956e-930011731734">
+
+
+<img width="368" alt="image" src="https://github.com/jusmendonca/plugin-conciliador-lite/assets/132851772/c916dd43-e62c-498f-a905-4c9a3f4e64cc">
+
+Depois, salve na pasta "planilhas", que está dentro da pasta **plugin-conciliador-lite-main**. Quando for usar a planilha com a nova DIB pela primeira vez, selecione-a.
 
 ## Observações
 
