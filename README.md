@@ -80,7 +80,7 @@ Mensalmente, será gerada uma nova planilha para a DIP no primeiro dia do mês c
 
 <img width="368" alt="image" src="https://github.com/jusmendonca/plugin-conciliador-lite/assets/132851772/c916dd43-e62c-498f-a905-4c9a3f4e64cc">
 
-Depois, salve na pasta "planilhas", que está dentro da pasta **plugin-conciliador-lite-main**. Quando for usar a planilha com a nova DIB pela primeira vez, selecione-a.
+Depois, salve na pasta "planilhas", que está dentro da pasta **plugin-conciliador-lite-main**. Quando for usar a planilha com a nova DIP pela primeira vez, selecione-a.
 
 ## Observações
 
