@@ -4,7 +4,7 @@
 
 Trata-se de uma extensão para o Google Chrome que auxilia no cálculo de valores de acordos judiciais envolvendo benefícios assistenciais e previdenciários no valor de um salário-mínimo.
 
-O plugin lê planilhas em formato .xlsx e retorna o valor total dos atrasados para a DIB informada, incluindo-o na área de tranferência do Windows. Basta, depois, colar o valor para o campo próprio da minuta de acordo.
+O plugin lê planilhas em formato .xlsx e retorna o valor total dos atrasados para a DIB informada, incluindo-o na área de transferência do Windows. Basta, depois, colar o valor para o campo próprio da minuta de acordo.
 
 É necessário que a planilha .xslx escolhida corresponda ao benefício, à DIP e ao percentual de desconto do acordo que será proposto.
 
