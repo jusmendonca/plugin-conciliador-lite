@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleFileSelect(event) {
         selectedFile = event.target.files[0];
         if (selectedFile) {
-            fileNameDisplay.textContent = `Último arquivo selecionado: ${selectedFile.name}`;
+            fileNameDisplay.textContent = Último arquivo selecionado: ${selectedFile.name};
             storeData();
             updateButtonState();
         }
@@ -90,19 +90,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function findDataByDib(data, dib) {
-        const mesAnoDib = `${('0' + (dib.getMonth() + 1)).slice(-2)}/${dib.getFullYear()}`;
+        const mesAnoDib = ${('0' + (dib.getMonth() + 1)).slice(-2)}/${dib.getFullYear()};
         return data.find(row => {
-            const dibDate = parseDate(row.dib);
-            const mesAnoRow = `${('0' + (dibDate.getMonth() + 1)).slice(-2)}/${dibDate.getFullYear()}`;
+            const dibDate = new Date(row.dib);
+            const mesAnoRow = ${('0' + (dibDate.getMonth() + 1)).slice(-2)}/${dibDate.getFullYear()};
             return mesAnoRow === mesAnoDib;
         });
     }
 
     function formatResult(result, dib) {
         const { dip, p_ant, p_atual, v_ant, v_atual, soma } = result;
-        return `
+        return 
 R$ ${formatCurrency(soma)}
-        `.trim();
+        .trim();
     }
 
     function formatDate(date) {
@@ -137,7 +137,6 @@ R$ ${formatCurrency(soma)}
                 const base64File = reader.result;
                 localStorage.setItem('selectedFile', base64File);
                 localStorage.setItem('fileName', selectedFile.name);
-                fileNameDisplay.textContent = `Último arquivo selecionado: ${selectedFile.name}`;
             };
             reader.readAsDataURL(selectedFile);
         }
@@ -162,7 +161,7 @@ R$ ${formatCurrency(soma)}
                     ia[i] = byteString.charCodeAt(i);
                 }
                 selectedFile = new Blob([ab], { type: mimeString });
-                fileNameDisplay.textContent = `Último arquivo selecionado: ${storedFileName}`;
+                fileNameDisplay.textContent = Último arquivo usado: ${storedFileName};
             } catch (e) {
                 console.error('Erro ao carregar o arquivo do localStorage', e);
                 localStorage.removeItem('selectedFile');
