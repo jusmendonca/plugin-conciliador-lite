@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function findDataByDib(data, dib) {
         const mesAnoDib = `${('0' + (dib.getMonth() + 1)).slice(-2)}/${dib.getFullYear()}`;
         return data.find(row => {
-            const dibDate = new Date(row.dib);
+            const dibDate = parseDate(row.dib);
             const mesAnoRow = `${('0' + (dibDate.getMonth() + 1)).slice(-2)}/${dibDate.getFullYear()}`;
             return mesAnoRow === mesAnoDib;
         });
@@ -137,6 +137,7 @@ R$ ${formatCurrency(soma)}
                 const base64File = reader.result;
                 localStorage.setItem('selectedFile', base64File);
                 localStorage.setItem('fileName', selectedFile.name);
+                fileNameDisplay.textContent = `Último arquivo selecionado: ${selectedFile.name}`;
             };
             reader.readAsDataURL(selectedFile);
         }
@@ -161,7 +162,7 @@ R$ ${formatCurrency(soma)}
                     ia[i] = byteString.charCodeAt(i);
                 }
                 selectedFile = new Blob([ab], { type: mimeString });
-                fileNameDisplay.textContent = `Último arquivo usado: ${storedFileName}`;
+                fileNameDisplay.textContent = `Último arquivo selecionado: ${storedFileName}`;
             } catch (e) {
                 console.error('Erro ao carregar o arquivo do localStorage', e);
                 localStorage.removeItem('selectedFile');
@@ -175,6 +176,3 @@ R$ ${formatCurrency(soma)}
         updateButtonState();
     }
 });
-
-
-
